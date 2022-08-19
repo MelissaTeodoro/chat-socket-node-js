@@ -46,7 +46,7 @@ div#box div#lateral{
 
 div#box div#lateral div#user{
     height: 40px;
-    width: 100%;
+    width: calc(100% - 30px);
     display: block;
     background: #2c2e31;
     border-top-left-radius: 5px;
@@ -167,14 +167,55 @@ div#box div#lateral ul#listaContatos li div#texto h1 span.number{
     margin-left: 10px;
 }
 
+div#box div#lateral ul#listaContatos li div#texto h1 span.number.of{
+    display: none;
+}
+
+div#box div#protetor{
+    background: #fff;
+    width: 75%;
+    height: 100%;
+    float: left;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+}
+
+div#box div#protetor div#texto{
+    margin: auto auto;
+    text-align: center;
+}
+
+div#box div#protetor div#texto h1{
+    font-family: FuturaPT;
+    color: #333;
+    font-size: 26px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+div#box div#protetor div#texto h2{
+    font-family: MuseoSans;
+    color: #666;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+div#box div#protetor div#texto h2 i{
+    display: inline-block;
+    margin-left: 5px;
+    color: red;
+}
+
 div#box div#chat{
     background: #fff;
     width: 75%;
     height: 100%;
     float: left;
-    display: block;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    display: none;
 }
 
 div#box div#chat div#usuario{

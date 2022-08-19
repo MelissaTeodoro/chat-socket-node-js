@@ -5,6 +5,7 @@
     <title>Chat tipo Whatsapp com NodeJS</title>
     <link rel="stylesheet" type="text/css" href="style/base.css" />
     <script type="text/javascript" src="script/jquery.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
     <script type="text/javascript" src="script/base.js"></script>
   </head>
   <body>
@@ -15,44 +16,23 @@
             <img src="imagem/pessoa.png" />
           </div>
           <div id="texto">
-            <h1>Melissa Teodoro</h1>
+            <h1 class="myName"></h1>
             <h2>Meu status</h2>
           </div>
         </div>
-        <ul id="listaContatos">
-          <li class="title">Contatos (2)</li>
-          <li>
-            <div id="imagem">
-              <img src="imagem/pessoa.png" />
-            </div>
-            <div id="texto">
-              <h1>Melissa Teodoro</h1>
-            </div>
-          </li>
-          <li class="new">
-            <div id="imagem">
-              <img src="imagem/pessoa.png" />
-            </div>
-            <div id="texto">
-              <h1>Melissa Teodoro <span class="number">1</span></h1>
-            </div>
-          </li>
-          <li class="title">Grupos (1)</li>
-          <li>
-            <div id="imagem">
-              <img src="imagem/pessoa.png" />
-            </div>
-            <div id="texto">
-              <h1>Trabalho</h1>
-            </div>
-          </li>
-        </ul>
+        <ul id="listaContatos"></ul>
+      </div>
+      <div id="protetor">
+        <div id="texto">
+          <h1>Clique em um contato para começar a conversa :)</h1>
+          <h2>Feito com <i class="fas fa-heart"></i></h2>
+        </div>
       </div>
       <div id="chat">
         <div id="usuario">
           <div id="lineTop">
             <i class="hashtag fas fa-hashtag"></i>
-            <h1>Trabalho</h1>
+            <h1 class="conversaTitle">Trabalho</h1>
             <div id="first" class="icone">
               <i class="far fa-user"></i>
               <span class="number">5</span>
@@ -63,7 +43,7 @@
             </div>
           </div>
           <div id="lineBottom">
-            <h2>Descricao do grupo</h2>
+            <h2>Descrição do grupo</h2>
           </div>
         </div>
         <ul id="conversa">
@@ -96,7 +76,7 @@
         </ul>
         <div id="enviar">
           <div id="area">
-            <textarea placeholder="Diga algo..."></textarea>
+            <textarea idTo="0" placeholder="Diga algo..."></textarea>
             <button><i class="fas fa-chevron-right"></i></button>
           </div>
         </div>
