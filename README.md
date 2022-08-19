@@ -1,5 +1,5 @@
 # chat-socket-node-js
-Projeto para estudos sobre comunicação em tempo real entre cliente e servidor utilizando a tecnologia de socket 
+Projeto para estudos sobre comunicação em tempo real entre cliente e servidor utilizando a tecnologia de sockets.
 
 - Código escrito através das aulas [Chat tipo Whatsapp com NodeJS](https://www.youtube.com/watch?v=04l-Gaj5O_Q&ab_channel=LucasDeano)
 
