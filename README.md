@@ -17,5 +17,5 @@ Abra uma página web e digite ```localhost```.
 
 Para testar o chat, basta abrir duas abas e iniciar a conversa de ambos os lados.
 
-## Socket
+## Sockets
 Tecnologia que permite applicações/processos se comunicarem.
